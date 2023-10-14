@@ -24,7 +24,7 @@ body {
     object-fit: cover;      
     margin-right: 15px;     
 }
-header, section, footer {
+header, footer {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -36,13 +36,31 @@ header, section, footer {
 section{
     background-color: aliceblue;
     display: flex;
+    flex-direction: row;
     flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    justify-content: center;  
+    align-items: center;
+ 
 
 }
-
+.side-nav{
+    position: absolute;  
+    left: 0;             
+    top: 50%;            
+    transform: translateY(-50%); 
+    padding: 20px;
+}
+.side-nav ul{
+    display: flex;
+    flex-direction: column;
+}
+.section-description{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 header{
     justify-content: space-between;
     padding-left: 50px;
@@ -63,7 +81,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 400px;
     
 }
 
